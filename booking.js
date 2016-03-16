@@ -1,13 +1,3 @@
 <script>
-    (function() {
-        var randomId = Math.floor(Math.random() * 100000);
-        var targetElemId = 'bcom_rwidget_' + randomId;
-        document.write('<div id="' + targetElemId + '"></div>');
-        var script   = document.createElement('script');
-        script.type  = 'text/javascript';
-        script.async = true;
-        script.src   = 'http://www.booking.com/review_widget/us/country-inn-and-suites-by-carlson-charlotte-airport.en.html?tmpl=review_widget/review_widget&wid=' + targetElemId + '&wtype=box_big&hotel_id=260480&widget_language=en';
-        var node     = document.getElementsByTagName('script')[0];
-        node.parentNode.insertBefore(script, node);
-    }());
+document.ready(function(){var e=Math.floor(1e5*Math.random()),t="bcom_rwidget_"+e;document.write('<div id="'+t+'"></div>');var i=document.createElement("script");i.type="text/javascript",i.async=!0,i.src="http://www.booking.com/review_widget/us/country-inn-and-suites-by-carlson-charlotte-airport.en.html?tmpl=review_widget/review_widget&wid="+t+"&wtype=box_big&hotel_id=260480&widget_language=en";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(i,r)}());
     </script>
